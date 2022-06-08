@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: whitesmoke;
+        font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+          "Helvetica Neue", sans-serif;
+        display: grid;
+        place-content: center;
+      }
+      body {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .container {
+        width: 280px;
+        height: 400px;
+        background-color: white;
+        border-radius: 10px;
+        object-fit: cover;
+        overflow: hidden;
+      }
+
+      .flag-img img {
+        width: 280px;
+      }
+      .country-details {
+        padding: 10px;
+      }
+      .country-name {
+        margin-top: 0px;
+      }
+      span {
+        font-weight: bold;
+      }
+
+      @media (min-width: 600px) {
+        body {
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+        }
+        /* .container{
+            display: flex;
+            height: 180px;
+            width: 450px;
+            
+        }
+        .flag-img img{
+            order: 1;
+            height: 180px;
+            width: 200px;
+            object-fit: cover;
+        } */
+      }
+
+      @media (min-width: 750px) {
+        body {
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+        }
+        .container {
+          display: flex;
+          height: 150px;
+          width: 370px;
+        }
+        .flag-img img {
+          order: 1;
+          height: 150px;
+          width: 200px;
+          object-fit: cover;
+        }
+      }
+
+      @media (min-width: 850px) {
+        body {
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+        }
+        .container {
+          display: flex;
+          height: 180px;
+          width: 450px;
+        }
+        .flag-img img {
+          order: 1;
+          height: 180px;
+          width: 200px;
+          object-fit: cover;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script src="flag.js"></script>
+  
+  </body>
+</html>
